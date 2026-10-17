@@ -107,7 +107,7 @@ export default function App() {
                 const r = resultOf(s);
                 return (
                   <tr key={s.id} className={s.flagged ? "flagged" : ""}>
-                    <td>{s.riderId || "-"}</td>
+                    <td>{s.riderEmail || s.riderId || "-"}</td>
                     <td>{fmtTime(s.startTime)}</td>
                     <td>{num(s.gpsDistanceKm)}</td>
                     <td>{num(s.reportedKm)}</td>
